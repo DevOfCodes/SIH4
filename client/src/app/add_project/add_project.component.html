@@ -1,0 +1,27 @@
+<div class="container mt-5 py-5 px-3">
+
+<form (submit)="addProject()">
+  <div class="form-group">
+    <label for="owner">Company Name</label>
+    <input type="text" class="form-control" name="ownerInput" placeholder="FIS" [(ngModel)]="owner">
+  </div>
+
+  <div class="form-group">
+    <label for="name">Project Name</label>
+    <input type="text" class="form-control" name="nameInput" placeholder="Ima Market" [(ngModel)]="name">
+  </div>
+
+  <div class="form-group">
+    <label for="description">Project Description</label>
+    <input type="text" class="form-control" name="descriptionInput"  [(ngModel)]="description">
+  </div>
+
+  <div class="form-group">
+    <label for="contributor">Project Coordinator Contact</label>
+    <input type="email" class="form-control" name="contributorInput" [(ngModel)]="contributor">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Add Details</button>
+</form>
+
+</div>

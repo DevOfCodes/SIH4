@@ -1,0 +1,28 @@
+<div class="container-fluid pr-0 pl-0 ml-0 mr-0">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand"  routerLink = "/">FIS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink = "/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" *ngIf="auth.isLoggedIn()"><a routerLink="/add_project" class="nav-link text-white">Add<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+
+
+        <ul class="navbar-nav mr-auto navbar-right ">
+        <li class="nav-item" *ngIf="!auth.isLoggedIn()"><a routerLink="/login" class="nav-link text-white">Sign in<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item" *ngIf="auth.isLoggedIn()"><a routerLink="/profile" class="nav-link text-white">{{ auth.getUserDetails()?.name }}<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item" *ngIf="auth.isLoggedIn()"><a (click)="auth.logout()" class="nav-link text-white">Logout<span class="sr-only">(current)</span></a></li>
+
+        </ul>
+
+      </nav>
+</div>
+
+<router-outlet></router-outlet>
