@@ -1,89 +1,110 @@
 <div class="container mt-5 pt-5 pl-2 pr-2 pb-2 ">
 
-<li *ngFor = "let index of count">
-  <div class="card">
+  <div class="projects">
+    <div class="project" ng-repeat="pro in projects"></div>
+    
+    <div class="card">
       <div class="card-header">
         Company Name
       </div>
       <div class="card-body">
         <h5 class="card-title">Project Name</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
-           eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
-            autem architecto illo tempora..</p>
-        <a class="btn btn-success" (click) = "onFinancialContributeClick()">Contribute Financially</a>
-        <a class="btn btn-info" (click) = "onTechnicalContributeClick()">Contribute Technically</a>
+          eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+          autem architecto illo tempora..</p>
+        <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+        <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
 
       </div>
     </div>
-    </li>
-    <div class="card mt-5"  >
-        <div class="card-header">
-          FIS
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">IMA MARKET</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
-             eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
-              autem architecto illo tempora..</p>
-          <a class="btn btn-success" (click) = "onFinancialContributeClick()">Contribute Financially</a>
-          <a class="btn btn-info" (click) = "onTechnicalContributeClick()">Contribute Technically</a>
-
-        </div>
-      </div>
-      <div class="card mt-5"  >
-          <div class="card-header">
-            FIS
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">IMA MARKET</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
-               eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
-                autem architecto illo tempora..</p>
-            <a class="btn btn-success" (click) = "onFinancialContributeClick()">Contribute Financially</a>
-            <a class="btn btn-info" (click) = "onTechnicalContributeClick()">Contribute Technically</a>
-
-          </div>
-        </div>
-        <div class="card mt-5"  >
-            <div class="card-header">
-              FIS
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">IMA MARKET</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
-                 eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
-                  autem architecto illo tempora..</p>
-              <a class="btn btn-success" (click) = "onFinancialContributeClick()">Contribute Financially</a>
-              <a class="btn btn-info" (click) = "onTechnicalContributeClick()">Contribute Technically</a>
-
-            </div>
-          </div><div class="card mt-5"  >
-              <div class="card-header">
-                FIS
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">IMA MARKET</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
-                   eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
-                    autem architecto illo tempora..</p>
-                <a class="btn btn-success" (click) = "onFinancialContributeClick()">Contribute Financially</a>
-                <a class="btn btn-info" (click) = "onTechnicalContributeClick()">Contribute Technically</a>
-
-              </div>
-            </div>
-            <div class="card mt-5"  >
-                <div class="card-header">
-                  FIS
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">IMA MARKET</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
-                     eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
-                      autem architecto illo tempora..</p>
-                  <a class="btn btn-success" (click) = "onFinancialContributeClick()">Contribute Financially</a>
-                  <a class="btn btn-info" (click) = "onTechnicalContributeClick()">Contribute Technically</a>
-
-                </div>
-              </div>
 
   </div>
+
+  <li *ngFor="let index of count">
+    <div class="card">
+      <div class="card-header">
+        Company Name
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Project Name</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
+          eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+          autem architecto illo tempora..</p>
+        <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+        <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
+
+      </div>
+    </div>
+  </li>
+  <div class="card mt-5">
+    <div class="card-header">
+      FIS
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">IMA MARKET</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
+        eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+        autem architecto illo tempora..</p>
+      <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+      <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
+
+    </div>
+  </div>
+  <div class="card mt-5">
+    <div class="card-header">
+      FIS
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">IMA MARKET</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
+        eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+        autem architecto illo tempora..</p>
+      <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+      <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
+
+    </div>
+  </div>
+  <div class="card mt-5">
+    <div class="card-header">
+      FIS
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">IMA MARKET</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
+        eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+        autem architecto illo tempora..</p>
+      <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+      <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
+
+    </div>
+  </div>
+  <div class="card mt-5">
+    <div class="card-header">
+      FIS
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">IMA MARKET</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
+        eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+        autem architecto illo tempora..</p>
+      <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+      <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
+
+    </div>
+  </div>
+  <div class="card mt-5">
+    <div class="card-header">
+      FIS
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">IMA MARKET</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam,
+        eaque qui officiis odio provident tempore rem quam nesciunt sunt non nam animi blanditiis dolore ea,
+        autem architecto illo tempora..</p>
+      <a class="btn btn-success" (click)="onFinancialContributeClick()">Contribute Financially</a>
+      <a class="btn btn-info" (click)="onTechnicalContributeClick()">Contribute Technically</a>
+
+    </div>
+  </div>
+
+</div>

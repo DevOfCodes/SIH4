@@ -3,22 +3,22 @@
 <form (submit)="addProject()">
   <div class="form-group">
     <label for="owner">Company Name</label>
-    <input type="text" class="form-control" name="ownerInput" placeholder="FIS" [(ngModel)]="owner">
+    <input type="text" class="form-control" id="owner" name="ownerInput" placeholder="FIS" [(ngModel)]="project.owner">
   </div>
 
   <div class="form-group">
     <label for="name">Project Name</label>
-    <input type="text" class="form-control" name="nameInput" placeholder="Ima Market" [(ngModel)]="name">
+    <input type="text" class="form-control" id="name" name="nameInput" placeholder="Ima Market" [(ngModel)]="project.name">
   </div>
 
   <div class="form-group">
     <label for="description">Project Description</label>
-    <input type="text" class="form-control" name="descriptionInput"  [(ngModel)]="description">
+    <input type="text" class="form-control" id="description" name="descriptionInput"  [(ngModel)]="project.description">
   </div>
 
   <div class="form-group">
     <label for="contributor">Project Coordinator Contact</label>
-    <input type="email" class="form-control" name="contributorInput" [(ngModel)]="contributor">
+    <input type="email" class="form-control" id="contributor" name="contributorInput" [(ngModel)]="project.contributor">
   </div>
 
   <button type="submit" class="btn btn-primary">Add Details</button>

@@ -12,13 +12,14 @@ import { RegisterComponent } from './register/register.component';
 import {AddProjectComponent} from './add_project/add_project.component';
 import { HomeComponent } from './home/home.component';
 import { AuthenticationService } from './authentication.service';
+import { ProjectMgmtService } from './project.service';
 import { AuthGuardService } from './auth-guard.service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  {path: 'add_project', component:AddProjectComponent},
+  { path: 'add_project', component:AddProjectComponent},
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] },
   { path: 'paymentWindow', component: PaymentWindowComponent},
   { path: 'techWindow', component: TechWindowComponent}
@@ -43,6 +44,7 @@ const routes: Routes = [
   ],
   providers: [
     AuthenticationService,
+    ProjectMgmtService,
     AuthGuardService
   ],
   bootstrap: [AppComponent]
